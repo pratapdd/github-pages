@@ -31,13 +31,13 @@
 Below APIs will be made available by kQuery.
 
 <ul id="index">
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('kquery').scrollIntoView();"><a style="border-bottom: 1px solid">kQuery(cssSelectorString)</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('replacewith').scrollIntoView();"><a style="border-bottom: 1px solid">kCollection.replaceWith(kCollection)</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('style').scrollIntoView();"><a style="border-bottom: 1px solid">kCollection.style(Object)</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('remove').scrollIntoView();"><a style="border-bottom: 1px solid">kCollection.remove()</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('find').scrollIntoView();"><a style="border-bottom: 1px solid">kCollection.find(cssSelectorString)</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('before').scrollIntoView();"><a style="border-bottom: 1px solid">kCollection.before(kCollection | htmlString)***</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('after').scrollIntoView();"><a style="border-bottom: 1px solid">kCollection.after(kCollection | htmlString)***</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('kquery').scrollIntoView();window.scrollBy(0, -20);"><a style="border-bottom: 1px solid">kQuery(cssSelectorString)</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('replacewith').scrollIntoView();window.scrollBy(0, -20);"><a style="border-bottom: 1px solid">kCollection.replaceWith(kCollection)</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('style').scrollIntoView();window.scrollBy(0, -20);"><a style="border-bottom: 1px solid">kCollection.style(Object)</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('remove').scrollIntoView();window.scrollBy(0, -20);"><a style="border-bottom: 1px solid">kCollection.remove()</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('find').scrollIntoView();window.scrollBy(0, -20);"><a style="border-bottom: 1px solid">kCollection.find(cssSelectorString)</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('before').scrollIntoView();window.scrollBy(0, -20);"><a style="border-bottom: 1px solid">kCollection.before(kCollection | htmlString)***</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('after').scrollIntoView();window.scrollBy(0, -20);"><a style="border-bottom: 1px solid">kCollection.after(kCollection | htmlString)***</a></li>
 </ul>
 
 
@@ -73,7 +73,7 @@ const kCollection = kQuery('.item');
 `kCollection` now contains the elements matching the CSS selector `.item`.
 
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
+<a style="cursor:pointer;margin-bottom:42px;margin-bottom:22px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
 
 
 <div id="replacewith"></div>
