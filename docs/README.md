@@ -31,13 +31,13 @@
 Below APIs will be made available by kQuery.
 
 <ul>
-  <li style="cursor:pointer;margin:10px;border-bottom:1px solid;" onclick="document.getElementById('kquery').scrollIntoView();">kQuery(cssSelectorString)</li>
-  <li style="cursor:pointer;margin:10px;border-bottom:1px solid;" onclick="document.getElementById('replacewith').scrollIntoView();">kCollection.replaceWith(kCollection)</li>
-  <li style="cursor:pointer;margin:10px;border-bottom:1px solid;" onclick="document.getElementById('style').scrollIntoView();">kCollection.style(Object)</li>
-  <li style="cursor:pointer;margin:10px;border-bottom:1px solid;" onclick="document.getElementById('remove').scrollIntoView();">kCollection.remove()</li>
-  <li style="cursor:pointer;margin:10px;border-bottom:1px solid;" onclick="document.getElementById('find').scrollIntoView();">kCollection.find(cssSelectorString)</li>
-  <li style="cursor:pointer;margin:10px;border-bottom:1px solid;" onclick="document.getElementById('before').scrollIntoView();">kCollection.before(kCollection | htmlString)***</li>
-  <li style="cursor:pointer;margin:10px;border-bottom:1px solid;" onclick="document.getElementById('after').scrollIntoView();">kCollection.after(kCollection | htmlString)***</li>
+  <li onclick="document.getElementById('kquery').scrollIntoView();"><a>kQuery(cssSelectorString)</a></li>
+  <li onclick="document.getElementById('replacewith').scrollIntoView();">kCollection.replaceWith(kCollection)</li>
+  <li onclick="document.getElementById('style').scrollIntoView();">kCollection.style(Object)</li>
+  <li onclick="document.getElementById('remove').scrollIntoView();">kCollection.remove()</li>
+  <li onclick="document.getElementById('find').scrollIntoView();">kCollection.find(cssSelectorString)</li>
+  <li onclick="document.getElementById('before').scrollIntoView();">kCollection.before(kCollection | htmlString)***</li>
+  <li onclick="document.getElementById('after').scrollIntoView();">kCollection.after(kCollection | htmlString)***</li>
 </ul>
 
 
