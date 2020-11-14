@@ -1,6 +1,6 @@
 
 <h1 align="center" style="border-bottom: none;">🚀 kQuery 🚀</h1>
-<h3 align="center" style="margin-top:20px;margin-bottom:30px;">A light-weight clone of your oldie goldie jQuery </h>
+<h3 align="center" style="margin-top:20px;margin-bottom:30px;color:blue;">A light-weight clone of your oldie goldie jQuery </h>
 <p align="center">
   <a href="https://travis-ci.org/github/pratapdd/kQuery">
     <img alt="Travis" src="https://img.shields.io/travis/pratapdd/kQuery?style=flat-square">
