@@ -31,18 +31,18 @@
 Below APIs will be made available by kQuery.
 
 <ul>
-  <li onclick={() => document.getElementById("kQuery").scrollIntoView();}>kQuery(cssSelectorString)</li>
+  <li onclick="document.getElementById('kquery-class').scrollIntoView();">kQuery(cssSelectorString)</li>
   <li>kCollection.replaceWith(kCollection)</li>
   <li>kCollection.style(Object)</li>
   <li>kCollection.remove()</li>
   <li>kCollection.find(cssSelectorString)</li>
-  <li onclick={() => document.getElementById("kquery-before").scrollIntoView();}>kCollection.before(kCollection | htmlString)***</li>
+  <li onclick="document.getElementById('kquery-before').scrollIntoView();">kCollection.before(kCollection | htmlString)***</li>
   <li>kCollection.after(kCollection | htmlString)***</li>
 </ul>
 
 
 ### `kQuery(cssSelectorString)`
-<div id="kQuery">
+<div id="kquery-class">
 
 Select matching elements on the page.
 
