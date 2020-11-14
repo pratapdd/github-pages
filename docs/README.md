@@ -31,18 +31,18 @@
 Below APIs will be made available by kQuery.
 
 <ul>
-  <li onclick="document.getElementById('kquery-class').scrollIntoView();">kQuery(cssSelectorString)</li>
-  <li>kCollection.replaceWith(kCollection)</li>
-  <li>kCollection.style(Object)</li>
-  <li>kCollection.remove()</li>
-  <li>kCollection.find(cssSelectorString)</li>
-  <li onclick="document.getElementById('kquery-before').scrollIntoView();">kCollection.before(kCollection | htmlString)***</li>
-  <li>kCollection.after(kCollection | htmlString)***</li>
+  <li onclick="document.getElementById('kquery').scrollIntoView();">kQuery(cssSelectorString)</li>
+  <li onclick="document.getElementById('replacewith').scrollIntoView();">kCollection.replaceWith(kCollection)</li>
+  <li onclick="document.getElementById('style').scrollIntoView();">kCollection.style(Object)</li>
+  <li onclick="document.getElementById('remove').scrollIntoView();">kCollection.remove()</li>
+  <li onclick="document.getElementById('find').scrollIntoView();">kCollection.find(cssSelectorString)</li>
+  <li onclick="document.getElementById('before').scrollIntoView();">kCollection.before(kCollection | htmlString)***</li>
+  <li onclick="document.getElementById('after').scrollIntoView();">kCollection.after(kCollection | htmlString)***</li>
 </ul>
 
 
 ### `kQuery(cssSelectorString)`
-<div id="kquery-class">
+<div id="kquery">
 
 Select matching elements on the page.
 
@@ -72,6 +72,7 @@ const kCollection = kQuery('.item');
 
 
 ### `kCollection.replaceWith(kCollection)`
+<div id="replacewith"></div>
 
 - Replaces the current collection with another one
 - Returns the new collection
@@ -104,6 +105,7 @@ kQuery('.item').replaceWith(kQuery('.itemReplacement'));
 
 
 ### `kCollection.style(Object)`
+<div id="style"></div>
 
 - Updates the style of the current collection
 - Returns the current collection
@@ -129,6 +131,7 @@ kQuery('.item').style({ color: 'red' });
 
 
 ### `kCollection.remove()`
+<div id="remove"></div>
 
 - Removes the current collection from the DOM
 - Returns an empty collection to allow the chain of commands to continue
@@ -158,6 +161,7 @@ kQuery('.item').remove();
 
 
 ### `kCollection.find(cssSelectorString)`
+<div id="find"></div>
 
 - Searches the current collection for matching elements and replaces the current collection
 - Returns the new collection
@@ -181,7 +185,10 @@ const kCollection = kQuery('.item').find('span');
 
 `kCollection` contains two spawn elements.
 
+
+
 ### `kCollection.get()`
+<div id="get"></div>
 
 - Returns an [`Array`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array) of all DOM elements in the `kCollection`
 
@@ -208,9 +215,9 @@ const domElements = kQuery('.item').get();
 
 
 
-<div id="kquery-before">
-### `kCollection.before(kCollection | htmlString)`
 
+### `kCollection.before(kCollection | htmlString)`
+<div id="before"></div>
 - Insert content, specified by the parameter, before each element in the set of matched elements
 - Returns the new collection
 
@@ -269,11 +276,11 @@ kQuery('.inner').before(kQuery('h2'));
   <div class="inner">How are you?</div>
 </div>
 ```
-</div>
+
 
 
 ### `kCollection.after(kCollection | htmlString)`
-
+<div id="after"></div>
 - Insert content, specified by the parameter, after each element in the set of matched elements
 - Returns the new collection
 
