@@ -31,7 +31,7 @@
 Below APIs will be made available by kQuery.
 
 <ul>
-  <li onclick="document.getElementById('kquery').scrollIntoView();"><a>kQuery(cssSelectorString)</a></li>
+  <li style="cursor:pointer;margin:12px;" onclick="document.getElementById('kquery').scrollIntoView();"><a style="border-bottom: 1px solid">kQuery(cssSelectorString)</a></li>
   <li onclick="document.getElementById('replacewith').scrollIntoView();">kCollection.replaceWith(kCollection)</li>
   <li onclick="document.getElementById('style').scrollIntoView();">kCollection.style(Object)</li>
   <li onclick="document.getElementById('remove').scrollIntoView();">kCollection.remove()</li>
