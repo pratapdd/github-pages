@@ -31,13 +31,13 @@
 Below APIs will be made available by kQuery.
 
 <ul id="index">
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('kquery').scrollIntoView();window.scrollBy(0, -40);"><a style="border-bottom: 1px solid">kQuery(cssSelectorString)</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('replacewith').scrollIntoView();window.scrollBy(0, -40);"><a style="border-bottom: 1px solid">kCollection.replaceWith(kCollection)</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('style').scrollIntoView();window.scrollBy(0, -40);"><a style="border-bottom: 1px solid">kCollection.style(Object)</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('remove').scrollIntoView();window.scrollBy(0, -40);"><a style="border-bottom: 1px solid">kCollection.remove()</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('find').scrollIntoView();window.scrollBy(0, -40);"><a style="border-bottom: 1px solid">kCollection.find(cssSelectorString)</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('before').scrollIntoView();window.scrollBy(0, -40);"><a style="border-bottom: 1px solid">kCollection.before(kCollection | htmlString)***</a></li>
-  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('after').scrollIntoView();window.scrollBy(0, -40);"><a style="border-bottom: 1px solid">kCollection.after(kCollection | htmlString)***</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('kquery').scrollIntoView();window.scrollBy(0, -70);"><a style="border-bottom: 1px solid">kQuery(cssSelectorString)</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('replacewith').scrollIntoView();window.scrollBy(0, -70);"><a style="border-bottom: 1px solid">kCollection.replaceWith(kCollection)</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('style').scrollIntoView();window.scrollBy(0, -70);"><a style="border-bottom: 1px solid">kCollection.style(Object)</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('remove').scrollIntoView();window.scrollBy(0, -70);"><a style="border-bottom: 1px solid">kCollection.remove()</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('find').scrollIntoView();window.scrollBy(0, -70);"><a style="border-bottom: 1px solid">kCollection.find(cssSelectorString)</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('before').scrollIntoView();window.scrollBy(0, -70);"><a style="border-bottom: 1px solid">kCollection.before(kCollection | htmlString)***</a></li>
+  <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('after').scrollIntoView();window.scrollBy(0, -70);"><a style="border-bottom: 1px solid">kCollection.after(kCollection | htmlString)***</a></li>
 </ul>
 
 
@@ -73,7 +73,7 @@ const kCollection = kQuery('.item');
 `kCollection` now contains the elements matching the CSS selector `.item`.
 
 
-<a style="cursor:pointer;margin-bottom:42px;margin-bottom:22px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -100);">Go to Main Index</a>
+<a style="cursor:pointer;margin-bottom:42px;margin-bottom:22px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120);">Go to Main Index</a>
 
 
 <div id="replacewith"></div>
@@ -111,7 +111,7 @@ kQuery('.item').replaceWith(kQuery('.itemReplacement'));
 ```
 
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -100);">Go to Main Index</a>
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120);">Go to Main Index</a>
 
 
 <div id="style"></div>
@@ -141,7 +141,7 @@ kQuery('.item').style({ color: 'red' });
 `Hello World!` is now displayed in red color.
 
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -100);">Go to Main Index</a>
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120);">Go to Main Index</a>
 
 
 <div id="remove"></div>
@@ -175,7 +175,7 @@ kQuery('.item').remove();
 <div>Hello World!</div>
 ```
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -100);">Go to Main Index</a>
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120);">Go to Main Index</a>
 
 <div id="find"></div>
 
@@ -206,7 +206,7 @@ const kCollection = kQuery('.item').find('span');
 `kCollection` contains two spawn elements.
 
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -100);">Go to Main Index</a>
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120);">Go to Main Index</a>
 
 <div id="get"></div>
 
@@ -238,7 +238,7 @@ const domElements = kQuery('.item').get();
 `domElements` contains an array of DOM elements with two elements.
 
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -100); Main Index</a>
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120); Main Index</a>
 
 
 <div id="before"></div>
@@ -306,7 +306,7 @@ kQuery('.inner').before(kQuery('h2'));
 ```
 
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -100);">Go to Main Index</a>
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120);">Go to Main Index</a>
 
 <div id="after"></div>
 
@@ -373,4 +373,4 @@ kQuery('.inner').before(kQuery('h2'));
 <h2>Greetings</h2>
 ```
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -100); Main Index</a>
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120); Main Index</a>
