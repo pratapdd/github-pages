@@ -31,17 +31,18 @@
 Below APIs will be made available by kQuery.
 
 <ul>
-  <li>kQuery(cssSelectorString)</li>
+  <li onclick={() => document.getElementById("kQuery").scrollIntoView();}>kQuery(cssSelectorString)</li>
   <li>kCollection.replaceWith(kCollection)</li>
   <li>kCollection.style(Object)</li>
   <li>kCollection.remove()</li>
   <li>kCollection.find(cssSelectorString)</li>
-  <li>kCollection.before(kCollection | htmlString)***</li>
+  <li onclick={() => document.getElementById("kquery-before").scrollIntoView();}>kCollection.before(kCollection | htmlString)***</li>
   <li>kCollection.after(kCollection | htmlString)***</li>
 </ul>
 
 
 ### `kQuery(cssSelectorString)`
+<div id="kQuery">
 
 Select matching elements on the page.
 
@@ -67,6 +68,7 @@ const kCollection = kQuery('.item');
 
 `kCollection` now contains the elements matching the CSS selector `.item`.
 
+</div>
 
 
 ### `kCollection.replaceWith(kCollection)`
@@ -206,7 +208,7 @@ const domElements = kQuery('.item').get();
 
 
 
-
+<div id="kquery-before">
 ### `kCollection.before(kCollection | htmlString)`
 
 - Insert content, specified by the parameter, before each element in the set of matched elements
@@ -267,6 +269,8 @@ kQuery('.inner').before(kQuery('h2'));
   <div class="inner">How are you?</div>
 </div>
 ```
+</div>
+
 
 ### `kCollection.after(kCollection | htmlString)`
 
