@@ -42,10 +42,10 @@ Below APIs will be made available by kQuery.
 
 
 
-<div id="kquery"></div>
+<div id="kquery" style="margin-bottom: 40px;"></div>
 
 
-### `kQuery(cssSelectorString)`
+## `kQuery(cssSelectorString)`
 
 
 Select matching elements on the page.
@@ -79,7 +79,7 @@ const kCollection = kQuery('.item');
 <div id="replacewith"></div>
 
 
-### `kCollection.replaceWith(kCollection)`
+## `kCollection.replaceWith(kCollection)`
 
 
 - Replaces the current collection with another one
@@ -116,7 +116,7 @@ kQuery('.item').replaceWith(kQuery('.itemReplacement'));
 
 <div id="style"></div>
 
-### `kCollection.style(Object)`
+## `kCollection.style(Object)`
 
 
 - Updates the style of the current collection
@@ -147,7 +147,7 @@ kQuery('.item').style({ color: 'red' });
 <div id="remove"></div>
 
 
-### `kCollection.remove()`
+## `kCollection.remove()`
 
 
 - Removes the current collection from the DOM
@@ -180,7 +180,7 @@ kQuery('.item').remove();
 <div id="find"></div>
 
 
-### `kCollection.find(cssSelectorString)`
+## `kCollection.find(cssSelectorString)`
 
 
 - Searches the current collection for matching elements and replaces the current collection
@@ -211,7 +211,7 @@ const kCollection = kQuery('.item').find('span');
 <div id="get"></div>
 
 
-### `kCollection.get()`
+## `kCollection.get()`
 
 
 - Returns an [`Array`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array) of all DOM elements in the `kCollection`
@@ -244,7 +244,7 @@ const domElements = kQuery('.item').get();
 <div id="before"></div>
 
 
-### `kCollection.before(kCollection | htmlString)`
+## `kCollection.before(kCollection | htmlString)`
 
 - Insert content, specified by the parameter, before each element in the set of matched elements
 - Returns the new collection
@@ -312,7 +312,7 @@ kQuery('.inner').before(kQuery('h2'));
 
 
 
-### `kCollection.after(kCollection | htmlString)`
+## `kCollection.after(kCollection | htmlString)`
 
 - Insert content, specified by the parameter, after each element in the set of matched elements
 - Returns the new collection
@@ -373,4 +373,4 @@ kQuery('.inner').before(kQuery('h2'));
 <h2>Greetings</h2>
 ```
 
-<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120); Main Index</a>
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();window.scrollBy(0, -120)">Go to Main Index</a>
