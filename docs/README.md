@@ -30,6 +30,17 @@
 
 Below APIs will be made available by kQuery.
 
+<ul>
+  <li>kQuery(cssSelectorString)</li>
+  <li>kCollection.replaceWith(kCollection)</li>
+  <li>kCollection.style(Object)</li>
+  <li>kCollection.remove()</li>
+  <li>kCollection.find(cssSelectorString)</li>
+  <li>kCollection.before(kCollection | htmlString)***</li>
+  <li>kCollection.after(kCollection | htmlString)***</li>
+</ul>
+
+
 ### `kQuery(cssSelectorString)`
 
 Select matching elements on the page.
@@ -55,6 +66,8 @@ const kCollection = kQuery('.item');
 #### Result
 
 `kCollection` now contains the elements matching the CSS selector `.item`.
+
+
 
 ### `kCollection.replaceWith(kCollection)`
 
@@ -86,6 +99,8 @@ kQuery('.item').replaceWith(kQuery('.itemReplacement'));
 <span class="itemReplacement">World!</span>
 ```
 
+
+
 ### `kCollection.style(Object)`
 
 - Updates the style of the current collection
@@ -108,6 +123,8 @@ kQuery('.item').style({ color: 'red' });
 #### Result
 
 `Hello World!` is now displayed in red color.
+
+
 
 ### `kCollection.remove()`
 
@@ -135,6 +152,8 @@ kQuery('.item').remove();
 ```html
 <div>Hello World!</div>
 ```
+
+
 
 ### `kCollection.find(cssSelectorString)`
 
@@ -184,6 +203,8 @@ const domElements = kQuery('.item').get();
 **Result:**
 
 `domElements` contains an array of DOM elements with two elements.
+
+
 
 
 ### `kCollection.before(kCollection | htmlString)`
