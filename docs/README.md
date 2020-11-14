@@ -30,7 +30,7 @@
 
 Below APIs will be made available by kQuery.
 
-<ul>
+<ul id="index">
   <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('kquery').scrollIntoView();"><a style="border-bottom: 1px solid">kQuery(cssSelectorString)</a></li>
   <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('replacewith').scrollIntoView();"><a style="border-bottom: 1px solid">kCollection.replaceWith(kCollection)</a></li>
   <li style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('style').scrollIntoView();"><a style="border-bottom: 1px solid">kCollection.style(Object)</a></li>
@@ -41,8 +41,12 @@ Below APIs will be made available by kQuery.
 </ul>
 
 
+
+<div id="kquery"></div>
+
+
 ### `kQuery(cssSelectorString)`
-<div id="kquery">
+
 
 Select matching elements on the page.
 
@@ -68,11 +72,15 @@ const kCollection = kQuery('.item');
 
 `kCollection` now contains the elements matching the CSS selector `.item`.
 
-</div>
+
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
+
+
+<div id="replacewith"></div>
 
 
 ### `kCollection.replaceWith(kCollection)`
-<div id="replacewith"></div>
+
 
 - Replaces the current collection with another one
 - Returns the new collection
@@ -103,9 +111,13 @@ kQuery('.item').replaceWith(kQuery('.itemReplacement'));
 ```
 
 
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
+
+
+<div id="style"></div>
 
 ### `kCollection.style(Object)`
-<div id="style"></div>
+
 
 - Updates the style of the current collection
 - Returns the current collection
@@ -129,9 +141,14 @@ kQuery('.item').style({ color: 'red' });
 `Hello World!` is now displayed in red color.
 
 
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
+
+
+<div id="remove"></div>
+
 
 ### `kCollection.remove()`
-<div id="remove"></div>
+
 
 - Removes the current collection from the DOM
 - Returns an empty collection to allow the chain of commands to continue
@@ -158,10 +175,13 @@ kQuery('.item').remove();
 <div>Hello World!</div>
 ```
 
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
+
+<div id="find"></div>
 
 
 ### `kCollection.find(cssSelectorString)`
-<div id="find"></div>
+
 
 - Searches the current collection for matching elements and replaces the current collection
 - Returns the new collection
@@ -186,9 +206,13 @@ const kCollection = kQuery('.item').find('span');
 `kCollection` contains two spawn elements.
 
 
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
+
+<div id="get"></div>
+
 
 ### `kCollection.get()`
-<div id="get"></div>
+
 
 - Returns an [`Array`](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array) of all DOM elements in the `kCollection`
 
@@ -214,10 +238,14 @@ const domElements = kQuery('.item').get();
 `domElements` contains an array of DOM elements with two elements.
 
 
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
+
+
+<div id="before"></div>
 
 
 ### `kCollection.before(kCollection | htmlString)`
-<div id="before"></div>
+
 - Insert content, specified by the parameter, before each element in the set of matched elements
 - Returns the new collection
 
@@ -278,9 +306,14 @@ kQuery('.inner').before(kQuery('h2'));
 ```
 
 
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
+
+<div id="after"></div>
+
+
 
 ### `kCollection.after(kCollection | htmlString)`
-<div id="after"></div>
+
 - Insert content, specified by the parameter, after each element in the set of matched elements
 - Returns the new collection
 
@@ -340,3 +373,4 @@ kQuery('.inner').before(kQuery('h2'));
 <h2>Greetings</h2>
 ```
 
+<a style="cursor:pointer;margin-bottom:12px;" onclick="document.getElementById('index').scrollIntoView();">Go to Main Index</a>
