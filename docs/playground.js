@@ -11,3 +11,11 @@ function kQuerycssSelector() {
 function kQuerycssSelectorReset() {
     kQuery('.item').style({backgroundColor: 'transparent'});
 }
+
+function replaceWith() {
+    kQuery('.item').replaceWith(kQuery('.itemReplacement'));
+}
+
+function replaceWithReset() {
+    kQuery('.itemReplacement').before('<div class="item">Some</div><div class="item">Item</div>')
+}
