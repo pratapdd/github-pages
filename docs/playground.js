@@ -1,8 +1,4 @@
 
-function testing() {
-    console.log('--inside testing--');
-    console.log(kQuery);
-  }
 
 function kQuerycssSelector() {
     kQuery('.first_item').style({backgroundColor: 'grey'})
@@ -17,5 +13,5 @@ function replaceWith() {
 }
 
 function replaceWithReset() {
-    kQuery('.second_itemReplacement').before('<div class="item">Some</div><div class="item">Item</div>')
+    kQuery('.second_itemReplacement').before('<div class="second_item">Some</div><div class="second_item">Item</div>')
 }
