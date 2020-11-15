@@ -80,7 +80,50 @@
         </div>
       </div>
 
+
+      <div id="fifth">
+        <div>5. kCollection.find(cssSelectorString)</div>
+        <div> Usage 
+          <pre><code>const kCollection = kQuery('.item').find('span');</code></pre>
+        </div>
+        <button onclick="find()">Test</button>
+        <button onclick="findReset()">Reset</button>
+        <div id="find-container">
+            <div class="fifth_marker"></div>
+            <div class="fifth_item">Hello <span>World!</span></div>
+            <div class="fifth_item">World! <span>Hello</span></div>
+        </div>
+      </div>
+
+      <div id="sixth">
+        <div>6. kCollection.before(kCollection | htmlString)</div>
+        <div> Usage 
+          <pre><code>kQuery('.inner').before("<p class="sixth_extra">Text</p>");</code></pre>
+        </div>
+        <button onclick="before()">Test</button>
+        <button onclick="beforeReset()">Reset</button>
+        <div id="find-container">
+            <div>Greetings</div>
+            <div class="sixth_inner">Hello</div>
+            <div class="sixth_inner">How are you?</div>
+        </div>
+      </div>
+
   
+      <div id="seventh">
+        <div>7. kCollection.after(kCollection | htmlString)</div>
+        <div> Usage 
+          <pre><code>kQuery('.inner').after("<p class="seventh_extra">Text</p>");</code></pre>
+        </div>
+        <button onclick="after()">Test</button>
+        <button onclick="afterReset()">Reset</button>
+        <div id="find-container">
+            <div>Greetings</div>
+            <div class="seventh_inner">Hello</div>
+            <div class="seventh_inner">How are you?</div>
+        </div>
+      </div>
+
   
   </div>
     <script src="./playground.js"></script>
