@@ -6,8 +6,14 @@
     <script src="https://unpkg.com/@pratapdd/kquery@1.1.1/dist/kQuery.umd.js"></script>
   </head>
   <style>
+      .container {
+          margin: 0 auto;
+      }
       .first_item {
-          background-color: transparent;
+        background-color: transparent;
+      }
+      .third_item {
+        background-color: transparent;
       }
   </style>
   <body>
@@ -37,6 +43,7 @@
         <button onclick="replaceWith()">Test</button>
         <button onclick="replaceWithReset()">Reset</button>
         <div id="replaceWith-container">
+            <div class="second_marker"></div> 
             <div class="second_item">Some</div>
             <div class="second_item">Item</div>
             
@@ -44,6 +51,19 @@
             <span class="second_itemReplacement">World!</span>
         </div>
       </div>
+
+      <div id="third">
+        <div>3. kCollection.style(Object)</div>
+        <div> Usage 
+          <pre><code>kQuery('.item').style({ color: 'red' });</code></pre>
+        </div>
+        <button onclick="style()">Test</button>
+        <button onclick="styleReset()">Reset</button>
+        <div id="replaceWith-container">
+            <div class="third_item">Hello World!</div>
+        </div>
+      </div>
+  
   
   
   </div>
