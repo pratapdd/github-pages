@@ -14,25 +14,36 @@
 
   <div id="container">
     <div>kQuery live example playground</div>
-    <div>
+    
+    <div id="first">
       <div>1. kQuery(cssSelectorString)</div>
       <div> Usage 
         <pre><code>const kCollection = kQuery('.item');</code></pre>
       </div>
-      <button onclick="kQuerycssSelector()">Click to Select item with classname - item</button>
-
+      <button onclick="kQuerycssSelector()">Test</button>
       <button onclick="kQuerycssSelectorReset()">Reset</button>
-
-
       <div id="kQuerycssSelector-container">
         <div class="item">Hello ~my classname is - item</div>
         <div class="item">Hello ~my classname is also - item </div>
         <div class="not_item">Hello ~my classname is also - not_item </div>
       </div>
-
-
-
     </div>
+
+    <div id="second">
+        <div>2. kCollection.replaceWith(kCollection)</div>
+        <div> Usage 
+          <pre><code>kQuery('.item').replaceWith(kQuery('.itemReplacement'));</code></pre>
+        </div>
+        <button onclick="replaceWith()">Test</button>
+        <button onclick="replaceWithReset()">Reset</button>
+        <div id="replaceWith-container">
+            <div class="item">Some</div>
+            <div class="item">Item</div>
+            
+            <span class="itemReplacement">Hello</span>
+            <span class="itemReplacement">World!</span>
+        </div>
+      </div>
   
   
   </div>
