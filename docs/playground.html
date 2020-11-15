@@ -5,15 +5,33 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"></link>
     <script src="https://unpkg.com/@pratapdd/kquery@1.1.1/dist/kQuery.umd.js"></script>
   </head>
+  <style>
+      .item {
+          background-color: transparent;
+      }
+  </style>
   <body>
 
   <div id="container">
-  
-
-
+    <div>kQuery live example playground</div>
     <div>
-      Test me
-      <button onclick="testing();">Testing now</button>
+      <div>1. kQuery(cssSelectorString)</div>
+      <div> Usage 
+        <pre><code>const kCollection = kQuery('.item');</code></pre>
+      </div>
+      <button onclick="kQuerycssSelector()">Click to Select item with classname - item</button>
+
+      <button onclick="kQuerycssSelectorReset()">Reset</button>
+
+
+      <div id="kQuerycssSelector-container">
+        <div class="item">Hello ~my classname is - item</div>
+        <div class="item">Hello ~my classname is also - item </div>
+        <div class="not_item">Hello ~my classname is also - not_item </div>
+      </div>
+
+
+
     </div>
   
   
