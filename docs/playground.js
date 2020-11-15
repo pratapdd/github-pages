@@ -5,17 +5,17 @@ function testing() {
   }
 
 function kQuerycssSelector() {
-    kQuery('.item').style({backgroundColor: 'grey'})
+    kQuery('.first_item').style({backgroundColor: 'grey'})
 }
 
 function kQuerycssSelectorReset() {
-    kQuery('.item').style({backgroundColor: 'transparent'});
+    kQuery('.first_item').style({backgroundColor: 'transparent'});
 }
 
 function replaceWith() {
-    kQuery('.item').replaceWith(kQuery('.itemReplacement'));
+    kQuery('.second_item').replaceWith(kQuery('.second_itemReplacement'));
 }
 
 function replaceWithReset() {
-    kQuery('.itemReplacement').before('<div class="item">Some</div><div class="item">Item</div>')
+    kQuery('.second_itemReplacement').before('<div class="item">Some</div><div class="item">Item</div>')
 }
